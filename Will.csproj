@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7613D7B9-A3E3-4930-BE58-38A6D13CEBE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Will</RootNamespace>
+    <AssemblyName>Will</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FireSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FireSharp.1.1.0\lib\net45\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FireSharp.Serialization.JsonNet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FireSharp.Serialization.JsonNet.1.1.0\lib\net45\FireSharp.Serialization.JsonNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Colours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colours.Designer.cs">
+      <DependentUpon>Colours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPage1.Designer.cs">
+      <DependentUpon>CPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPage2.Designer.cs">
+      <DependentUpon>CPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPage3.Designer.cs">
+      <DependentUpon>CPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSentences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSentences.Designer.cs">
+      <DependentUpon>CreateSentences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="ColoursActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColoursActivity.Designer.cs">
+      <DependentUpon>ColoursActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L1.Designer.cs">
+      <DependentUpon>L1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L2.Designer.cs">
+      <DependentUpon>L2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L3.Designer.cs">
+      <DependentUpon>L3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L4.Designer.cs">
+      <DependentUpon>L4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningColours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningColours.Designer.cs">
+      <DependentUpon>LearningColours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LifeSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LifeSkills.Designer.cs">
+      <DependentUpon>LifeSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maths.Designer.cs">
+      <DependentUpon>Maths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathsActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathsActivity.Designer.cs">
+      <DependentUpon>MathsActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MATHS_NS_SS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MATHS_NS_SS.Designer.cs">
+      <DependentUpon>MATHS_NS_SS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPage1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPage1.Designer.cs">
+      <DependentUpon>NPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPage2.Designer.cs">
+      <DependentUpon>NPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPage3.Designer.cs">
+      <DependentUpon>NPage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPage4.Designer.cs">
+      <DependentUpon>NPage4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NsA.Designer.cs">
+      <DependentUpon>NsA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NsL.Designer.cs">
+      <DependentUpon>NsL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumbersActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumbersActivity.Designer.cs">
+      <DependentUpon>NumbersActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ColoursActivity.Designer.cs">
+      <DependentUpon>ColoursActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleAd.Designer.cs">
+      <DependentUpon>PuzzleAd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleChip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleChip.Designer.cs">
+      <DependentUpon>PuzzleChip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleF.Designer.cs">
+      <DependentUpon>PuzzleF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleM.Designer.cs">
+      <DependentUpon>PuzzleM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzlePaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzlePaw.Designer.cs">
+      <DependentUpon>PuzzlePaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzlePrin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzlePrin.Designer.cs">
+      <DependentUpon>PuzzlePrin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleSimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleSimp.Designer.cs">
+      <DependentUpon>PuzzleSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuzzleTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuzzleTj.Designer.cs">
+      <DependentUpon>PuzzleTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SentenceTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SentenceTime.Designer.cs">
+      <DependentUpon>SentenceTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes.Designer.cs">
+      <DependentUpon>Shapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialAngry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialAngry.Designer.cs">
+      <DependentUpon>SocialAngry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialCrossing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialCrossing.Designer.cs">
+      <DependentUpon>SocialCrossing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialHitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialHitting.Designer.cs">
+      <DependentUpon>SocialHitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialPlaying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialPlaying.Designer.cs">
+      <DependentUpon>SocialPlaying.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialStories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialStories.Designer.cs">
+      <DependentUpon>SocialStories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersForm.Designer.cs">
+      <DependentUpon>TeachersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeForMediumPuzzles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeForMediumPuzzles.Designer.cs">
+      <DependentUpon>TimeForMediumPuzzles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeForPuzzles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeForPuzzles.Designer.cs">
+      <DependentUpon>TimeForPuzzles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadPictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadPictures.Designer.cs">
+      <DependentUpon>UploadPictures.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Colours.resx">
+      <DependentUpon>Colours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPage1.resx">
+      <DependentUpon>CPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPage2.resx">
+      <DependentUpon>CPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPage3.resx">
+      <DependentUpon>CPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColoursActivity.resx">
+      <DependentUpon>ColoursActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateSentences.resx">
+      <DependentUpon>CreateSentences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L1.resx">
+      <DependentUpon>L1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L2.resx">
+      <DependentUpon>L2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L3.resx">
+      <DependentUpon>L3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L4.resx">
+      <DependentUpon>L4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningColours.resx">
+      <DependentUpon>LearningColours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LifeSkills.resx">
+      <DependentUpon>LifeSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maths.resx">
+      <DependentUpon>Maths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathsActivity.resx">
+      <DependentUpon>MathsActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MATHS_NS_SS.resx">
+      <DependentUpon>MATHS_NS_SS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPage1.resx">
+      <DependentUpon>NPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPage2.resx">
+      <DependentUpon>NPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPage3.resx">
+      <DependentUpon>NPage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPage4.resx">
+      <DependentUpon>NPage4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumbersActivity.resx">
+      <DependentUpon>NumbersActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PuzzleAd.resx">
+      <DependentUpon>PuzzleAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzleChip.resx">
+      <DependentUpon>PuzzleChip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzleF.resx">
+      <DependentUpon>PuzzleF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzleM.resx">
+      <DependentUpon>PuzzleM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzlePaw.resx">
+      <DependentUpon>PuzzlePaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzlePrin.resx">
+      <DependentUpon>PuzzlePrin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzleSimp.resx">
+      <DependentUpon>PuzzleSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuzzleTj.resx">
+      <DependentUpon>PuzzleTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SentenceTime.resx">
+      <DependentUpon>SentenceTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes.resx">
+      <DependentUpon>Shapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialAngry.resx">
+      <DependentUpon>SocialAngry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialCrossing.resx">
+      <DependentUpon>SocialCrossing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialHitting.resx">
+      <DependentUpon>SocialHitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialPlaying.resx">
+      <DependentUpon>SocialPlaying.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialStories.resx">
+      <DependentUpon>SocialStories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersForm.resx">
+      <DependentUpon>TeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeForMediumPuzzles.resx">
+      <DependentUpon>TimeForMediumPuzzles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeForPuzzles.resx">
+      <DependentUpon>TimeForPuzzles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadPictures.resx">
+      <DependentUpon>UploadPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Wait.jpg" />
+    <None Include="Resources\NoSteal.webp" />
+    <None Include="Resources\worried.PNG" />
+    <None Include="Resources\3c5bb6bb48222733de73d417db73700a.jpg" />
+    <None Include="Resources\angry.PNG" />
+    <None Include="Resources\excited.PNG" />
+    <None Include="Resources\frustrated.PNG" />
+    <None Include="Resources\angry.jpg" />
+    <None Include="Resources\angry1.jpg" />
+    <None Include="Resources\Ad1.jpg" />
+    <None Include="Resources\Ad2.jpg" />
+    <None Include="Resources\Ad3.jpg" />
+    <None Include="Resources\Ad4.jpg" />
+    <None Include="Resources\Ad5.jpg" />
+    <None Include="Resources\Ad6.jpg" />
+    <None Include="Resources\Ad7.jpg" />
+    <None Include="Resources\Ad8.jpg" />
+    <None Include="Resources\Ad9.jpg" />
+    <None Include="Resources\c1.jpg" />
+    <None Include="Resources\c2.jpg" />
+    <None Include="Resources\c3.jpg" />
+    <None Include="Resources\c4.jpg" />
+    <None Include="Resources\c5.jpg" />
+    <None Include="Resources\c6.jpg" />
+    <None Include="Resources\c7.jpg" />
+    <None Include="Resources\c8.jpg" />
+    <None Include="Resources\c9.jpg" />
+    <None Include="Resources\cat.png" />
+    <None Include="Resources\dad.png" />
+    <None Include="Resources\drive.png" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\Family.png" />
+    <None Include="Resources\clipart9233.png" />
+    <None Include="Resources\free-clipart-x-clip-art-images-231657.png" />
+    <None Include="Resources\crossing.jpg" />
+    <None Include="Resources\Asking.jpg" />
+    <Content Include="Resources\gg.png" />
+    <None Include="Resources\Sad.PNG" />
+    <None Include="Resources\scared.PNG" />
+    <None Include="Resources\silly.PNG" />
+    <None Include="Resources\surprised.PNG" />
+    <None Include="Resources\Happy.PNG" />
+    <None Include="Resources\life-skills-graphic-black-and-white-stock-huge-freebie-311831.png" />
+    <None Include="Resources\life-skill-lessons-for-students-wadhwani-foundation-926416.png" />
+    <None Include="Resources\sad.jpg" />
+    <None Include="Resources\scared.jpg" />
+    <None Include="Resources\happy.jpg" />
+    <None Include="Resources\happy1.jpg" />
+    <None Include="Resources\sad1.jpg" />
+    <None Include="Resources\scared1.jpg" />
+    <None Include="Resources\Laughing.jpg" />
+    <None Include="Resources\Lie.jpg" />
+    <None Include="Resources\NoLie.jpg" />
+    <None Include="Resources\NoSweest.jpg" />
+    <None Include="Resources\NoLaughing.jpg" />
+    <None Include="Resources\Steal.jpg" />
+    <None Include="Resources\NoSteal.jpg" />
+    <None Include="Resources\Sweets.jpg" />
+    <None Include="Resources\NoSweets.jpg" />
+    <None Include="Resources\S1.jpg" />
+    <None Include="Resources\S2.jpg" />
+    <None Include="Resources\S3.jpg" />
+    <None Include="Resources\S4.jpg" />
+    <None Include="Resources\S5.jpg" />
+    <None Include="Resources\S6.jpg" />
+    <None Include="Resources\S7.jpg" />
+    <None Include="Resources\S8.jpg" />
+    <None Include="Resources\S9.jpg" />
+    <None Include="Resources\Tj1.jpg" />
+    <None Include="Resources\Tj2.jpg" />
+    <None Include="Resources\Tj3.jpg" />
+    <None Include="Resources\Tj4.jpg" />
+    <None Include="Resources\Tj5.jpg" />
+    <None Include="Resources\Tj6.jpg" />
+    <None Include="Resources\Tj7.jpg" />
+    <None Include="Resources\Tj8.jpg" />
+    <None Include="Resources\Tj9.jpg" />
+    <None Include="Resources\John.png" />
+    <None Include="Resources\mango.png" />
+    <None Include="Resources\mother.png" />
+    <None Include="Resources\toys.png" />
+    <None Include="Resources\social-stories.png" />
+    <None Include="Resources\NoFight.jpg" />
+    <None Include="Resources\NoShout.jpg" />
+    <None Include="Resources\TalkFeelings.png" />
+    <None Include="Resources\LookLeft.gif" />
+    <None Include="Resources\LookRight.gif" />
+    <None Include="Resources\PlayTogether.jpg" />
+    <None Include="Resources\NotUpset.jpg" />
+    <None Include="Resources\Play.gif" />
+    <None Include="Resources\PlaySelf.png" />
+    <None Include="Resources\NoFight1.jpg" />
+    <None Include="Resources\PlayHitting.png" />
+    <None Include="Resources\SadClip.png" />
+    <None Include="Resources\Sorry.png" />
+    <Content Include="Resources\ty.png" />
+    <None Include="Resources\ty1.png" />
+    <None Include="Resources\tree6.jpg" />
+    <None Include="Resources\tree15.png" />
+    <None Include="Resources\ladybug4.1.png" />
+    <None Include="Resources\tree5.png" />
+    <None Include="Resources\tree9.png" />
+    <None Include="Resources\tree7.png" />
+    <None Include="Resources\clipart936826.png" />
+    <None Include="Resources\Daco_4704366.png" />
+    <None Include="Resources\ClipartKey_981920.png" />
+    <None Include="Resources\hiclipart.com %282%29.png" />
+    <None Include="Resources\hiclipart.com %283%29.png" />
+    <None Include="Resources\clipart164100.png" />
+    <None Include="Resources\clipart1874184.png" />
+    <None Include="Resources\clipart2470192.png" />
+    <None Include="Resources\Daco_4246075.png" />
+    <None Include="Resources\F1.jpg" />
+    <None Include="Resources\F2.jpg" />
+    <None Include="Resources\F3.jpg" />
+    <None Include="Resources\F4.jpg" />
+    <None Include="Resources\FOG.jpg" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\8.png" />
+    <Content Include="Resources\img1.png" />
+    <Content Include="Resources\img2.png" />
+    <Content Include="Resources\img3.png" />
+    <Content Include="Resources\img4.png" />
+    <Content Include="Resources\img5.png" />
+    <Content Include="Resources\img6.png" />
+    <Content Include="Resources\img7.png" />
+    <Content Include="Resources\img8.png" />
+    <None Include="Resources\ladybug3.png" />
+    <None Include="Resources\ladybug4.png" />
+    <None Include="Resources\ladybug5.png" />
+    <None Include="Resources\ladybug6.png" />
+    <None Include="Resources\ladybug7.png" />
+    <None Include="Resources\ladybug16.png" />
+    <None Include="Resources\PinClipart.com_free-number-clipart_73442.png" />
+    <None Include="Resources\PinClipart.com_free-number-clipart_72675.png" />
+    <None Include="Resources\pngwing.com %281%29.png" />
+    <None Include="Resources\pngwing.com.png" />
+    <None Include="Resources\PinClipart.com_lightning-mcqueen-clipart_232614.png" />
+    <None Include="Resources\PinClipart.com_free-garden-clipart_73863.png" />
+    <None Include="Resources\kissclipart-apple-trees-clipart-apple-clip-art-40cd32b94d969355.png" />
+    <None Include="Resources\kisspng-rainbow-child-cartoon-illustration-children-on-the-rainbow-vector-5a9c099a042b14.8698553015201755140171.png" />
+    <None Include="Resources\PngJoy_crayola-logo-pink-crayon-hd-png-download_5219223.png" />
+    <None Include="Resources\M1.jpg" />
+    <None Include="Resources\M2.jpg" />
+    <None Include="Resources\M3.jpg" />
+    <None Include="Resources\M4.jpg" />
+    <None Include="Resources\MOG.jpg" />
+    <None Include="Resources\P1.jpg" />
+    <None Include="Resources\P2.jpg" />
+    <None Include="Resources\P3.jpg" />
+    <None Include="Resources\P4.jpg" />
+    <None Include="Resources\POG.jpg" />
+    <None Include="Resources\Pr1.jpg" />
+    <None Include="Resources\Pr2.jpg" />
+    <None Include="Resources\Pr3.jpg" />
+    <None Include="Resources\Pr4.jpg" />
+    <None Include="Resources\PrOG.jpg" />
+    <None Include="Resources\p1.png" />
+    <None Include="Resources\p2.png" />
+    <None Include="Resources\p3.png" />
+    <None Include="Resources\p4.png" />
+    <None Include="Resources\p5.png" />
+    <None Include="Resources\p6.png" />
+    <None Include="Resources\p7.png" />
+    <None Include="Resources\p8.png" />
+    <Content Include="Resources\question.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
