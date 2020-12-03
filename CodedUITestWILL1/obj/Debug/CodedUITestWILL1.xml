@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CodedUITestWILL1
+</name>
+</assembly>
+<members>
+<member name="P:CodedUITestWILL1.CodedUITest1.TestContext">
+<summary>
+Gets or sets the test context which provides
+information about and functionality for the current test run.
+</summary>
+</member>
+<member name="M:CodedUITestWILL1.CodedUITestWILL1.UIMap.RecordedApplicationEntireProcess">
+<summary>
+Application is ran from the very beginning (Registration) , all the way to to the latest added game.
+</summary>
+</member>
+<member name="T:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams">
+<summary>
+Parameters to be passed into 'RecordedApplicationEntireProcess'
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtNameEditText">
+<summary>
+Type 'Bathabile' in 'txtName' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtSurnameEditText">
+<summary>
+Type 'Maripane' in 'txtSurname' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIDtpDOBDateTimePickerDateTimeAsString">
+<summary>
+Select '1998/01/20' in 'dtpDOB' date time picker
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIDtpDOBDateTimePickerSendKeys">
+<summary>
+Type 'July' in 'dtpDOB' date time picker
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIDtpDOBDateTimePickerSendKeys1">
+<summary>
+Type 'Jufdg' in 'dtpDOB' date time picker
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIDtpDOBDateTimePickerSendKeys2">
+<summary>
+Type '7' in 'dtpDOB' date time picker
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtNumberEditText">
+<summary>
+Type '0619325904' in 'txtNumber' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtEmailEditText">
+<summary>
+Type 'bathabilemaripane@gmail.com' in 'txtEmail' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtUserEditText">
+<summary>
+Type 'Bath98' in 'txtUser' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtPassEditSendKeys">
+<summary>
+Type '********' in 'txtPass' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtCNameEditText">
+<summary>
+Type 'KG' in 'txtCName' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIDtpCDOBDateTimePickerDateTimeAsString">
+<summary>
+Select '2000/11/29' in 'dtpCDOB' date time picker
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtCUserEditText">
+<summary>
+Type 'KG' in 'txtCUser' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtCPassEditSendKeys">
+<summary>
+Type '********' in 'txtCPass' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtNameEditText1">
+<summary>
+Type 'KG' in 'txtName' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtPassEditSendKeys1">
+<summary>
+Type '********' in 'txtPass' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIEasyMediumRadioButtonSelected">
+<summary>
+Select 'Easy-Medium' radio button
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIEasyMediumRadioButtonSelected1">
+<summary>
+Select 'Easy-Medium' radio button
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtNameEditText2">
+<summary>
+Type 'KG' in 'txtName' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtPassEditSendKeys2">
+<summary>
+Type '********' in 'txtPass' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIEasyMediumRadioButtonSelected2">
+<summary>
+Select 'Easy-Medium' radio button
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtNameEditText3">
+<summary>
+Type 'KG' in 'txtName' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UITxtPassEditSendKeys3">
+<summary>
+Type '********' in 'txtPass' text box
+</summary>
+</member>
+<member name="F:CodedUITestWILL1.CodedUITestWILL1.RecordedApplicationEntireProcessParams.UIEasyMediumRadioButtonSelected3">
+<summary>
+Select 'Easy-Medium' radio button
+</summary>
+</member>
+</members>
+</doc>

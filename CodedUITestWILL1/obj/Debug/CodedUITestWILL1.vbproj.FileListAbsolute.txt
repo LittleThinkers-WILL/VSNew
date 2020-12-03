@@ -1,0 +1,8 @@
+C:\Users\batha\source\repos\CodedUITestWILL1\bin\Debug\CodedUITestWILL1.dll
+C:\Users\batha\source\repos\CodedUITestWILL1\bin\Debug\CodedUITestWILL1.pdb
+C:\Users\batha\source\repos\CodedUITestWILL1\bin\Debug\CodedUITestWILL1.xml
+C:\Users\batha\source\repos\CodedUITestWILL1\obj\Debug\CodedUITestWILL1.vbprojAssemblyReference.cache
+C:\Users\batha\source\repos\CodedUITestWILL1\obj\Debug\CodedUITestWILL1.vbproj.CoreCompileInputs.cache
+C:\Users\batha\source\repos\CodedUITestWILL1\obj\Debug\CodedUITestWILL1.dll
+C:\Users\batha\source\repos\CodedUITestWILL1\obj\Debug\CodedUITestWILL1.xml
+C:\Users\batha\source\repos\CodedUITestWILL1\obj\Debug\CodedUITestWILL1.pdb
